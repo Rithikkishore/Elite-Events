@@ -1,0 +1,490 @@
+/* =================================
+   ELITE EVENTS
+   BOOKING SUCCESS PAGE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #111827;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.success-header {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #111827;
+}
+
+.success-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.success-logo i {
+    color: #ff4d6d;
+    font-size: 27px;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 50px;
+
+    transition: .3s;
+}
+
+.home-button:hover {
+    background: #fff;
+    color: #111827;
+}
+
+
+/* =================================
+   PAGE
+================================= */
+
+.success-page {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 20px;
+}
+
+
+/* =================================
+   SUCCESS CARD
+================================= */
+
+.success-card {
+    width: 100%;
+    max-width: 850px;
+
+    background: #fff;
+
+    padding: 55px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.08);
+}
+
+
+/* =================================
+   SUCCESS ICON
+================================= */
+
+.success-icon {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8fff4;
+    color: #14b86f;
+
+    font-size: 38px;
+}
+
+.success-label {
+    color: #14b86f;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.success-card h1 {
+    margin-top: 12px;
+
+    font-size: 48px;
+
+    color: #111827;
+}
+
+.success-message {
+    max-width: 650px;
+
+    margin: 15px auto 30px;
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 28px;
+}
+
+
+/* =================================
+   BOOKING ID
+================================= */
+
+.booking-id-box {
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    background: #fff1f3;
+
+    padding: 15px 35px;
+
+    border-radius: 15px;
+
+    margin-bottom: 40px;
+}
+
+.booking-id-box span {
+    color: #667085;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+}
+
+.booking-id-box strong {
+    color: #ff4d6d;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   DETAILS
+================================= */
+
+.details-section {
+    text-align: left;
+
+    border-top: 1px solid #eaecf0;
+
+    padding-top: 35px;
+}
+
+.details-section h2 {
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+    color: #111827;
+}
+
+.details-section h2 i {
+    color: #ff4d6d;
+
+    margin-right: 8px;
+}
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.detail-item {
+    background: #f8fafc;
+
+    border-radius: 14px;
+
+    padding: 18px;
+}
+
+.detail-item span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+}
+
+.detail-item strong {
+    color: #111827;
+
+    font-size: 15px;
+
+    word-break: break-word;
+}
+
+
+/* =================================
+   STATUS
+================================= */
+
+.status-box {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: left;
+
+    background: #fff8e7;
+
+    border: 1px solid #ffe3a3;
+
+    border-radius: 15px;
+}
+
+.status-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0c2;
+
+    color: #d89b00;
+}
+
+.status-box strong {
+    color: #111827;
+
+    font-size: 14px;
+}
+
+.status-box p {
+    margin-top: 4px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 22px;
+}
+
+#bookingStatus {
+    color: #d89b00;
+
+    font-weight: 700;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.success-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 15px 25px;
+
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.primary-button {
+    background: #ff4d6d;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    border: none;
+}
+
+.primary-button:hover {
+    background: #e63e5d;
+
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    background: #fff;
+
+    color: #111827;
+
+    border: 1px solid #d0d5dd;
+}
+
+.secondary-button:hover {
+    background: #111827;
+
+    color: #fff;
+
+    border-color: #111827;
+}
+
+
+/* =================================
+   BOTTOM MESSAGE
+================================= */
+
+.bottom-message {
+    margin-top: 30px;
+
+    color: #98a2b3;
+
+    font-size: 13px;
+}
+
+.bottom-message i {
+    color: #ff4d6d;
+
+    margin-right: 5px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 650px) {
+
+    .success-header {
+        padding: 20px 5%;
+    }
+
+    .success-logo {
+        font-size: 19px;
+    }
+
+    .success-logo i {
+        font-size: 22px;
+    }
+
+    .home-button {
+        padding: 9px 15px;
+
+        font-size: 12px;
+    }
+
+    .success-page {
+        padding: 40px 15px;
+    }
+
+    .success-card {
+        padding: 35px 20px;
+
+        border-radius: 22px;
+    }
+
+    .success-card h1 {
+        font-size: 38px;
+    }
+
+    .success-message {
+        font-size: 14px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+
+/* =================================
+   PRINT
+================================= */
+
+@media print {
+
+    .success-header,
+    .success-buttons,
+    .bottom-message {
+        display: none;
+    }
+
+    .success-page {
+        padding: 0;
+    }
+
+    .success-card {
+        box-shadow: none;
+
+        max-width: 100%;
+    }
+}

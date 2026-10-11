@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Bookings | Elite Events</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/my-bookings.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="bookings-header">
+
+        <nav class="bookings-navbar">
+
+            <a href="dashboard.html" class="bookings-logo">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <span>Elite Events</span>
+            </a>
+
+            <div class="nav-actions">
+
+                <a href="booking.html" class="new-booking-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    New Booking
+                </a>
+
+                <a href="dashboard.html" class="home-btn">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE -->
+
+    <main class="bookings-page">
+
+        <div class="bookings-container">
+
+            <!-- TITLE -->
+
+            <div class="page-title">
+
+                <span>MY EVENTS</span>
+
+                <h1>My Bookings</h1>
+
+                <p>
+                    View and manage all your event booking requests
+                    in one place.
+                </p>
+
+            </div>
+
+
+            <!-- USER INFO -->
+
+            <div class="user-welcome">
+
+                <div class="welcome-icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div>
+                    <span>Welcome back</span>
+                    <h3 id="userName">User</h3>
+                </div>
+
+            </div>
+
+
+            <!-- BOOKING COUNT -->
+
+            <div class="booking-summary">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Bookings</span>
+                        <h2 id="totalBookings">0</h2>
+                    </div>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <div class="summary-icon pending">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>Pending</span>
+                        <h2 id="pendingBookings">0</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOKINGS -->
+
+            <section class="bookings-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span>BOOKING HISTORY</span>
+                        <h2>Your Events</h2>
+                    </div>
+
+                </div>
+
+
+                <div id="bookingsList" class="bookings-list">
+                    <!-- JavaScript will add bookings here -->
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div id="emptyBookings" class="empty-bookings">
+
+                    <div class="empty-icon">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                    </div>
+
+                    <h3>No Bookings Yet</h3>
+
+                    <p>
+                        You haven't submitted any event booking
+                        requests yet.
+                    </p>
+
+                    <a href="booking.html">
+                        Create Your First Booking
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/my-bookings.js"></script>
+
+</body>
+
+</html>
